@@ -11,7 +11,7 @@ Everything is modular, reusable, and built to scale with your learning.
 
 ##  Quick Start
 
-```bash
+```
 # Clone the repository
 git clone https://github.com/<your-username>/react-workbench.git
 
@@ -39,12 +39,12 @@ TailwindCSS (optional)
 
 Git & GitHub for version control
 
-
+```
 
 # 6) `LICENSE` (MIT) — minimal
 ```text
 MIT License
-
+```
 Copyright (c) 2025 Alok Sharma
 
 
