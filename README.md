@@ -13,7 +13,7 @@ Everything is modular, reusable, and built to scale with your learning.
 
 ```
 # Clone the repository
-git clone https://github.com/<your-username>/react-workbench.git
+git clone https://github.com/alokkksharmaa/React-workbench.git
 
 # Navigate to folder
 cd react-workbench
