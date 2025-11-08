@@ -40,8 +40,7 @@ TailwindCSS (optional)
 Git & GitHub for version control
 
 ```
-
-# 6) `LICENSE` (MIT) — minimal
+LICENSE (MIT) — minimal
 ```text
 MIT License
 ```
