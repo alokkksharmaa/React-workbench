@@ -1,16 +1,15 @@
 import './App.css';
 import EventHandling from "./Components/EventHandling";
 import Login from "./Components/Login";
-import Math from "./Components/math";
-
+import CounterHooks from "./Components/counterHooks"
 
 function App() {
   return (
     <>
       {/* <EventHandling /> */}
       {/* <Login/> */}
+      <CounterHooks/>
       
-      <math/>
 
 
     </>
