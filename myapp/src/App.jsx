@@ -1,18 +1,31 @@
 import "./App.css";
-import EventHandling from "./Components/EventHandling";
-import Login from "./Components/Login";
-import CounterHooks from "./Components/counterHooks";
-import UseEffect from "./Components/useEffect";
+import StudentDetail from "./Components/StudentDetail";
 
 function App() {
-  return (
-    <>
-      {/* <EventHandling /> */}
-      {/* <Login/> */}
-      {/* <CounterHooks/> */}
+  const obj1 = {
+    name: "Alok",
+    Regnumber: 1234212,
+    Address: "Lpu",
+    Number: 788544582,
+  };
 
-      <useEffect />
-    </>
+  const obj2 = {
+    name: "Alok",
+    Regnumber: 12343425,
+    Address: "Lpu",
+    Number: 8556655952,
+  };
+
+
+  return (
+
+      <>
+      <StudentDetail temp={obj1}/>
+
+            <p>-----</p>
+
+      <StudentDetail temp={obj2}/>
+</>
   );
 }
 
