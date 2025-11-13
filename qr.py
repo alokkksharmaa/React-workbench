@@ -1,7 +1,7 @@
 import qrcode
 
-url = input("Enter the URL").strip()
-file_path = "C:\\DSA\\qrcode.png"
+url = input("Enter the URL: ").strip()
+file_path = "C:\\WebDev\\INT252qrcode.jpg"
 
 qr = qrcode.QRCode()
 qr.add_data(url)
