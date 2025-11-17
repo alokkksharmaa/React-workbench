@@ -1,18 +1,12 @@
 import "./App.css";
-import Student_Detail from "./Components/Student_Detail";
-
-
+import Greetings from "./Components/greetings";
 
 function App() {
- 
-
+  const person = { name: "Alok Sharma" };
   return (
-
-      <>
-      
-
-      <Student_Detail/>
-</>
+    <>
+      <Greetings name={person.name}/>
+    </>
   );
 }
 
