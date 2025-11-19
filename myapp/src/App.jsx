@@ -1,13 +1,12 @@
 import "./App.css";
 import React from "react";
-import Greetings from "./Components/greetings";
+import UseState from "./Components/UseState"
 
 function App() {
-  const person = { name:"Alok Sharma"};
   return (
     <>
-      <Greetings name={person.name}/>
-    </>
+      <Counter/>
+      </>
   );
 }
 
