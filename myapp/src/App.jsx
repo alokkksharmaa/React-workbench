@@ -5,7 +5,7 @@ import UseState from "./Components/UseState"
 function App() {
   return (
     <>
-      <Counter/>
+      <UseState/>
       </>
   );
 }
