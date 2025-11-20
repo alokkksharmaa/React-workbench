@@ -4,18 +4,14 @@ function LiveText() {
   const [text, setText] = useState("");
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div>
       <input
         type="text"
         placeholder="Type something..."
         value={text}
         onChange={(e) => setText(e.target.value)}
-        style={{ padding: "8px", fontSize: "16px" }}
       />
-
-      <p style={{ marginTop: "20px", fontSize: "18px" }}>
-        {text}
-      </p>
+      <p>{text}</p>
     </div>
   );
 }
