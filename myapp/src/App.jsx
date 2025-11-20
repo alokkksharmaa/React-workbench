@@ -1,12 +1,14 @@
 import "./App.css";
 import React from "react";
-import UseState from "./Components/UseState"
+import FlipText from "./Components/fliptext";
+import LiveText from "./Components/LiveText";
 
 function App() {
   return (
     <>
-      <UseState/>
-      </>
+      <FlipText />
+      <LiveText />
+    </>
   );
 }
 
