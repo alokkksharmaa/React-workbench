@@ -1,13 +1,11 @@
 import "./App.css";
 import React from "react";
-import FlipText from "./Components/fliptext";
-import LiveText from "./Components/LiveText";
+import Counter from "./Components/counter"
 
 function App() {
   return (
     <>
-      <FlipText />
-      <LiveText />
+    <Counter/>
     </>
   );
 }
