@@ -1,10 +1,13 @@
 import "./App.css";
-import UseEffect from "./Components/useEffect";
+import React from "react";
+import Counter from "./Components/counter";
+import Togglenname from "./miniproject/togglename";
+
 
 function App() {
   return (
     <>
-      <UseEffect />
+    <Togglenname/>
     </>
   );
 }
