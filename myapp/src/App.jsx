@@ -1,11 +1,10 @@
 import "./App.css";
-import React from "react";
-import Counter from "./Components/counter"
+import UseEffect from "./Components/useEffect";
 
 function App() {
   return (
     <>
-    <Counter/>
+      <UseEffect />
     </>
   );
 }
