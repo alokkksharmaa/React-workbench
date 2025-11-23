@@ -1,4 +1,3 @@
-
 # React-workbench
 A structured React playground for tutorials, practice components, and project-based learning.
 ---
@@ -8,7 +7,6 @@ A structured React playground for tutorials, practice components, and project-ba
 Everything is modular, reusable, and built to scale with your learning.
 
 ---
-
 
 ##  Quick Start
 
@@ -28,9 +26,9 @@ npm run dev
 # Build for production
 npm run build
 ---
-🧰 Tech Stack
+Tech Stack
 
-React 18 (Vite)
+React 18 (Vite) latest
 
 JavaScript (ES6+)
 
