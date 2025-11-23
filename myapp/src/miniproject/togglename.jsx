@@ -8,7 +8,7 @@ function  Togglenname(){
   }
   return(
     <>
-    <h1>Toggle Name</h1>
+    <h1 >Toggle Name</h1>
     <p>{name}</p>
     <button onClick={handleName}>Click to change name</button>
     </>
