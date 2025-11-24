@@ -7,9 +7,7 @@ const CounterHooks = () => {
     <div className="counter-container">
       <p className="para">You have clicked {count} times</p>
       <button
-        className="btn"
         onClick={() => {
-          console.log("You have clicked button");
           setCount(count + 1);
         }}
       >
