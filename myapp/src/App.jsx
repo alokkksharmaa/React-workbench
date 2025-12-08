@@ -1,11 +1,10 @@
 import "./App.css";
-import React from "react";
-import Counter from "./Hooks/reducer";
+import ValidationForm from "./Hooks/Validationform";
 
 function App() {
   return (
     <>
-      <Counter />
+    <ValidationForm/>
     </>
   );
 }
