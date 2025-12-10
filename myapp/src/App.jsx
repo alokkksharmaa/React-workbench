@@ -1,12 +1,11 @@
 import "./App.css";
-import ValidationForm from "./Hooks/Validationform";
+import PutData from "./Axios/PutData";
 
 function App() {
   return (
     <>
-    <ValidationForm/>
+      <PutData/>
     </>
   );
 }
-
 export default App;
