@@ -1,11 +1,11 @@
 import "./App.css";
-import PutData from "./Axios/PutData";
-
+import AxiosDeleteData from "./Axios/Axiosputdata" 
 function App() {
-  return (
+  return(
     <>
-      <PutData/>
+      <AxiosDeleteData/>
     </>
-  );
+  )
 }
+
 export default App;
