@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import LoginForm from "./Forms/form";
 
-function App(){
+import AxiosApp from "./Axios/axios";
+
+function App() {
   return(
-    <div>
-      <LoginForm/>
-    </div>
-  )
-}
+    <AxiosApp/>  
+)};
 
 export default App;
