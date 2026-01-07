@@ -50,7 +50,7 @@ Copyright (c) 2025 Alok Sharma
 Alok Kumar Sharma
 📍 Engineering Student | Full Stack Developer | React & Node Enthusiast | Good in DSA
 📧 aloksharma1097@gmail.com
-💼 LinkedIn - https://www.linkedin.com/in/alok-s-011822213/
+💼 LinkedIn - https://www.linkedin.com/in/alokkksharmaa/
  • GitHub - https://github.com/alokkksharmaa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy...
