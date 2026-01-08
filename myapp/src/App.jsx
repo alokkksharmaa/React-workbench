@@ -1,23 +1,41 @@
 // myapp/src/app.jsx
 
-import React from "react";
 import "./App.css";
-import { useAppSelector, useAppDispatch } from "./redux/hooks";
-import { increment } from "./redux/slices/counter";
-import MyComp from "./myComp";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  increment,
+  decrement,
+  incrementByAmount,
+} from "./redux/counter/counterSlice";
 
 export default function App() {
-  const count = useAppSelector((state) => state.counter);
-  const dispatch = useAppDispatch();
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+  const [incrementAmount, setIncrement] = useState("2");
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Count is {count}</h1>
-        <button onClick={() => dispatch(increment())}>+</button>
-      </header>
+    <div className="min-h-screen text-center m-5">
+      <h1>Redux Toolkit Counter Demo</h1>
+      <h2>Current Count: {count}</h2>
 
-      <MyComp />
+      <button onClick={() => dispatch(increment())}>+1</button>
+      <button onClick={() => dispatch(decrement())}>-1</button>
+
+      <div style={{ marginTop: "20px" }}>
+        <input
+          type="number"
+          value={incrementAmount}
+          onChange={(e) => setIncrement(e.target.value)}
+        />
+        <button
+          onClick={() =>
+            dispatch(incrementByAmount(Number(incrementAmount) || 0))
+          }
+        >
+          Add Amount
+        </button>
+      </div>
     </div>
   );
 }

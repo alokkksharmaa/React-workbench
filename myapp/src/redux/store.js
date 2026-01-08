@@ -1,13 +1,10 @@
-// redux/store.js
+// myapp/src/redux/store.js
+
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./slices/counter";
+import counterReducer from "./counter/counterSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
   },
 });
-
-// JS version exports
-export const RootState = store.getState;
-export const AppDispatch = store.dispatch;
