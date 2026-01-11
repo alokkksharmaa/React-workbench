@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import React {useEffect,  use } from "react";
-
+import { useEffect, useState } from "react";
 
 function App () {
-  const [num, setNum] = useEffect(0);
-  useEffect{ () => {
-    alert("Clicked");
-  }}
+  const [num, setNum] = useState(0);
+
+
+  useEffect(() => {
+    setNum(s => s + 1);
+  }, 1000)
   return (
     <>
     <p>Num</p>

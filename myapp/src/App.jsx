@@ -1,41 +1,46 @@
-// myapp/src/app.jsx
-
-import "./App.css";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  increment,
-  decrement,
-  incrementByAmount,
-} from "./redux/counter/counterSlice";
+import { addTodo, toggleTodo, deleteTodo } from "./ToDo/Slice/createSlice";
 
-export default function App() {
-  const count = useSelector((state) => state.counter.value);
+function App() {
+  const [text, setText] = useState("");
+  const todos = useSelector(state => state.todos.todos);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrement] = useState("2");
+
+  const add = e => {
+    e.preventDefault();
+    if (!text.trim()) return;
+    dispatch(addTodo(text));
+    setText("");
+  };
 
   return (
-    <div className="min-h-screen text-center m-5">
-      <h1>Redux Toolkit Counter Demo</h1>
-      <h2>Current Count: {count}</h2>
+    <div style={{ width: 300, margin: "50px auto" }}>
+      <h2>Todo App</h2>
 
-      <button onClick={() => dispatch(increment())}>+1</button>
-      <button onClick={() => dispatch(decrement())}>-1</button>
-
-      <div style={{ marginTop: "20px" }}>
+      <form onSubmit={add}>
         <input
-          type="number"
-          value={incrementAmount}
-          onChange={(e) => setIncrement(e.target.value)}
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder="Enter todo"
         />
-        <button
-          onClick={() =>
-            dispatch(incrementByAmount(Number(incrementAmount) || 0))
-          }
-        >
-          Add Amount
-        </button>
-      </div>
+      </form>
+
+      <ul>
+        {todos.map(t => (
+          <li key={t.id}>
+            <input
+              type="checkbox"
+              checked={t.completed}
+              onChange={() => dispatch(toggleTodo(t.id))}
+            />
+            {t.text}
+            <button onClick={() => dispatch(deleteTodo(t.id))}>x</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
+
+export default App;

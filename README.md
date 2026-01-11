@@ -15,7 +15,7 @@ Everything is modular, reusable, and built to scale with your learning.
 git clone https://github.com/alokkksharmaa/React-workbench.git
 
 # Navigate to folder
-cd react-workbench
+cd react-workbench .
 
 # Install dependencies
 npm install
@@ -51,7 +51,7 @@ Alok Kumar Sharma
 📍 Engineering Student | Full Stack Developer | React & Node Enthusiast | Good in DSA
 📧 aloksharma1097@gmail.com
 💼 LinkedIn - https://www.linkedin.com/in/alokkksharmaa/
- • GitHub - https://github.com/alokkksharmaa
+![alt text](image.png) GitHub - https://github.com/alokkksharmaa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 [standard MIT text — copy from choosealicense.com or use template]

@@ -11,7 +11,6 @@ export default function About () {
 
         <button onClick={() => navigate("/")}> Home!</button>
       </div>
-
     </div>
   )
 };

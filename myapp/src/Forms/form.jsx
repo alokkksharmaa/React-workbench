@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function LoginForm() {
+export default function LoginForm() {
   // state for form data and errors
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
@@ -54,5 +54,3 @@ function LoginForm() {
     </form>
   );
 }
-
-export default LoginForm;

@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
 import axios from "axios";
 
-const Axios = () => {
-  async function getUsers() {
+export default async function Axios(){
     try {
-      const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-      console.log(res.data);
-      console.res(res.err);
-    } catch (error) {
-      console.res(res.err);
+      const response = await axios.get("https://api.example.com/data");
+      console.log(response.data);
+    } catch (err) {
+      console.log("the server ghosted You: ", error.massage);
     }
-  }
 };
 
-export default Axios;
