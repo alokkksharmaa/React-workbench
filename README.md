@@ -3,7 +3,7 @@ A structured React playground for tutorials, practice components, and project-ba
 ---
 ## 📘 Overview
 
-**React Workbench** is a curated environment for mastering React — from the fundamentals (state, props, hooks, lifecycle) to real-world projects designed for placements and portfolio building.  
+**React Workbench** is a curated environment for mastering React including JavaScript Basics concepts — from the (state, props, hooks, lifecycle) to real-world projects designed for placements and portfolio building.  
 Everything is modular, reusable, and built to scale with your learning.
 
 ---
